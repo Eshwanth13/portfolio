@@ -1,5 +1,5 @@
 import "./Hero.css";
-
+import mypic from "../../images/my_pic.PNG";
 function Hero() {
   return (
     <div id="hero" >
@@ -9,12 +9,12 @@ function Hero() {
         <p>
           I'm an engineering student and passionate developer who loves building interactive web experiences and smart digital solutions.
         </p>
-        <a href="#" class="btn">
+        <a href="#about" class="btn">
           Get Started...
         </a>
       </div>
-      <div class="heroimg">
-        <img src="../images/my_pic.PNG"></img>
+      <div className="heroimg">
+        <img src={mypic}></img>
       </div>
     </div>
   );
