@@ -1,0 +1,127 @@
+/* --- Projects Section --- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#projects {
+  background-color: #191a17e3; /* Dark background */
+  color: #eee;
+  padding: 60px 10%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding-top: 10rem;
+  /* Center the entire section 
+  */
+}
+
+/* Projects heading */
+#projects h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  color: #f1c40f; /* Gold */
+  margin-bottom: 50px;
+  padding: 20px 40px;
+  border-radius: 12px;
+  border: 2px solid #7b887e;
+  display: inline-block;
+  box-shadow: 0 6px 20px rgba(241, 196, 15, 0.4);
+  animation: popOut 0.6s ease forwards;
+}
+
+/* Pop-out animation */
+@keyframes popOut {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Projects grid */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;             /* Wrap cards to next row if needed */
+  justify-content: center;     /* Center the cards */
+  gap: 30px;                   /* Spacing between cards */
+  width: 100%;
+  max-width: 1200px;           /* Limit max width for desktop */
+}
+
+/* Project card */
+.project-card {
+  flex: 1 0 300px;             /* Flexible width, min 300px */
+  max-width: 350px;
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  animation: slideUp 0.8s forwards;
+}
+
+/* Project card info */
+.project-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-info h3 {
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.project-info .tech {
+  display: block;
+  font-size: 0.9rem;
+  color: #d8dc17;
+  margin-bottom: 10px;
+}
+
+/* Project links */
+.project-links a {
+  color: #eee;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.project-links a:hover {
+  color: #f1c40f;
+  transform: translateY(-3px);
+}
+
+/* Hover effect for card */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(241,196,15,0.5);
+}
+
+/* Slide-up animation for cards */
+@keyframes slideUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* --- Responsive Mobile --- */
+@media (max-width: 768px) {
+  #projects {
+    padding: 40px 5%;
+  }
+
+  .projects-grid {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+}
