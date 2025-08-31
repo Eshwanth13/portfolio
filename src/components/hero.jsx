@@ -7,7 +7,7 @@ function Hero() {
         <h1>Hello, I'm Eshwanth Raj.</h1>
         <p>Engineering Student | Web Developer | Tech Enthusiast</p>
         <p>
-          I'm an engineering student and passionate developer who loves building interactive web experiences and smart digital solutions.
+          I'm an engineering student at NIT Bhopal, originally from Telangana, India. I’m a passionate developer who loves building interactive web experiences and smart digital solutions.
         </p>
         <a href="#about" class="btn">
           Get Started...
