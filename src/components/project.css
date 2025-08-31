@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 #projects {
-  background-color: #191a17e3; /* Dark background */
+  background-color: hsla(80, 6%, 10%, 0.89); /* Dark background */
   color: #eee;
   padding: 60px 10%;
   font-family: 'Poppins', sans-serif;

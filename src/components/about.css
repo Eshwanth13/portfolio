@@ -27,7 +27,6 @@
   border: 2px solid #3f3e39;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 6px 20px rgba(241, 196, 15, 0.4);
   animation: popOut 0.6s ease forwards;
   width: fit-content;
   max-width: 90%;
